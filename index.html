@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Grid Layout</title>
+</head>
+
+<body>
+    <main>
+        <div class="grid-template-areas">
+            <div class="grid-item grid-item-sticky grid-area-navigation">
+                <div class="priority-container">
+                    <span class="priority-list-label">High</span>
+
+                    <ol class="priority-list">
+                        <li class="priority-list-item">
+                            <label for="high-mexican">Mexican</label>
+                            <input type="checkbox" id="high-mexican">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="chinese-high">Chinese</label>
+                            <input type="checkbox" id="chinese-high">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="japanese-high">Japanese</label>
+                            <input type="checkbox" id="japanese-high">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="korean-high">Korean</label>
+                            <input type="checkbox" id="korean-high">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="vietnamese-high">Vietnamese</label>
+                            <input type="checkbox" id="vietnamese-high">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="filipino-high">Filipino</label>
+                            <input type="checkbox" id="filipino-high">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="indian-high">Indian</label>
+                            <input type="checkbox" id="indian-high">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="american-high">American</label>
+                            <input type="checkbox" id="american-high">
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="priority-container">
+                    <span class="priority-list-label">Medium</span>
+
+                    <ol class="priority-list">
+                        <li class="priority-list-item">
+                            <label for="medium-mexican">Mexican</label>
+                            <input type="checkbox" id="medium-mexican">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="chinese-medium">Chinese</label>
+                            <input type="checkbox" id="chinese-medium">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="japanese-medium">Japanese</label>
+                            <input type="checkbox" id="japanese-medium">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="korean-medium">Korean</label>
+                            <input type="checkbox" id="korean-medium">
+                        </li>
+
+                        <li class="priority-list-item">
+                            <label for="vietnamese-medium">Vietnamese</label>
+                            <input type="checkbox" id="vietnamese-medium">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="filipino-medium">Filipino</label>
+                            <input type="checkbox" id="filipino-medium">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="indian-medium">Indian</label>
+                            <input type="checkbox" id="indian-medium">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="american-medium">American</label>
+                            <input type="checkbox" id="american-medium">
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="priority-container">
+                    <span class="priority-list-label">Low</span>
+
+                    <ol class="priority-list">
+                        <li class="priority-list-item">
+                            <label for="low-mexican">Mexican</label>
+                            <input type="checkbox" id="low-mexican">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="chinese-low">Chinese</label>
+                            <input type="checkbox" id="chinese-low">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="japanese-low">Japanese</label>
+                            <input type="checkbox" id="japanese-low">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="korean-low">Korean</label>
+                            <input type="checkbox" id="korean-low">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="vietnamese-low">Vietnamese</label>
+                            <input type="checkbox" id="vietnamese-low">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="filipino-low">Filipino</label>
+                            <input type="checkbox" id="filipino-low">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="indian-low">Indian</label>
+                            <input type="checkbox" id="indian-low">
+                        </li>
+                        <li class="priority-list-item">
+                            <label for="american-low">American</label>
+                            <input type="checkbox" id="american-low">
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="priority-container">
+                    <span class="priority-list-label">Colors</span>
+
+                    <ul class="priority-list">
+                        <li class="priority-list-item">
+                            <p>Hero</p>
+                            <div class="color-box color-box-hero-color"></div>
+                        </li>
+                        <li class="priority-list-item">
+                            <p>High</p>
+                            <div class="color-box color-box-high-color"></div>
+                        </li>
+                        <li class="priority-list-item">
+                            <p>Medium</p>
+                            <div class="color-box color-box-medium-color"></div>
+                        </li>
+                        <li class="priority-list-item">
+                            <p>Low</p>
+                            <div class="color-box color-box-low-color"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid-item grid-area-content" id="horizontal-product-list">
+
+                <!-- <div class="horizontal-products-list">
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="horizontal-products-list">
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://picsum.photos/200.webp" class="product-image" alt="product image">
+                        <div class="product-info">
+                            <h3 class="product-title">Product #1</h3>
+                            <p>Brand: <span>Product brand</span></p>
+                            <p>Partner: <span>Dummy</span></p>
+                            <p>Price: <span>$13.99</span></p>
+                            <p>Breakdown: <span>$13.99 / each</span></p>
+                            <p>Health Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                            <p>Price Check: <span><i class="fa-solid fa-thumbs-up thumb-up-color"></i></span></p>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </main>
+    <script src="main.js" defer></script>
+</body>
+
+</html>
