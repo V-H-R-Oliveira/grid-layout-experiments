@@ -23,12 +23,6 @@
     margin-right: 0;
 }
 
-.sticky-top {
-    position: sticky;
-    z-index: 1020;
-    top: 0;
-}
-
 .grid-template-areas {
     display: grid;
     width: 100vw;
@@ -60,7 +54,7 @@
 
 .priority-list-label {
     padding: 0;
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
     font-size: 1.2rem;
 }
 
@@ -160,6 +154,10 @@
 }
 
 @media screen and (max-device-width: 480px) {
+    body {
+        font-size: x-small;
+    }
+
     .grid-template-areas {
         grid-template-columns: 1fr 2fr auto;
     }

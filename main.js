@@ -37,4 +37,91 @@ const generateProductHorizontalList = (productsListRows = 1, productsPerRow = 20
     }
 }
 
+const generatePriorityList = (priority) => {
+    const priorityLowerCase = priority.toLowerCase();
+
+    return `
+        <div class="priority-container">
+            <span class="priority-list-label">${priority}</span>
+
+            <ol class="priority-list">
+                <li class="priority-list-item">
+                    <label for="${priorityLowerCase}-mexican">Mexican</label>
+                    <input type="checkbox" id="${priorityLowerCase}-mexican">
+                </li>
+                <li class="priority-list-item">
+                    <label for="chinese-${priorityLowerCase}">Chinese</label>
+                    <input type="checkbox" id="chinese-${priorityLowerCase}">
+                </li>
+                <li class="priority-list-item">
+                    <label for="japanese-${priorityLowerCase}">Japanese</label>
+                    <input type="checkbox" id="japanese-${priorityLowerCase}">
+                </li>
+                <li class="priority-list-item">
+                    <label for="korean-${priorityLowerCase}">Korean</label>
+                    <input type="checkbox" id="korean-${priorityLowerCase}">
+                </li>
+                <li class="priority-list-item">
+                    <label for="vietnamese-${priorityLowerCase}">Vietnamese</label>
+                    <input type="checkbox" id="vietnamese-${priorityLowerCase}">
+                </li>
+                <li class="priority-list-item">
+                    <label for="filipino-${priorityLowerCase}">Filipino</label>
+                    <input type="checkbox" id="filipino-${priorityLowerCase}">
+                </li>
+                <li class="priority-list-item">
+                    <label for="indian-${priorityLowerCase}">Indian</label>
+                    <input type="checkbox" id="indian-${priorityLowerCase}">
+                </li>
+                <li class="priority-list-item">
+                    <label for="american-${priorityLowerCase}">American</label>
+                    <input type="checkbox" id="american-${priorityLowerCase}">
+                </li>
+            </ol>
+        </div>
+    `;
+}
+
+const generateColorsList = () => {
+    return `
+        <div class="priority-container">
+            <span class="priority-list-label">Colors</span>
+
+            <ul class="priority-list">
+                <li class="priority-list-item">
+                    <p>Hero</p>
+                    <div class="color-box color-box-hero-color"></div>
+                </li>
+                <li class="priority-list-item">
+                    <p>High</p>
+                    <div class="color-box color-box-high-color"></div>
+                </li>
+                <li class="priority-list-item">
+                    <p>Medium</p>
+                    <div class="color-box color-box-medium-color"></div>
+                </li>
+                <li class="priority-list-item">
+                    <p>Low</p>
+                    <div class="color-box color-box-low-color"></div>
+                </li>
+            </ul>
+        </div>`;
+}
+
+const generatePrioritiesList = () => {
+    const priorities = ["Hero", "High", "Medium", "Low"];
+    const prioritiesContainerParent = document.getElementById("priorities");
+
+    prioritiesContainerParent.innerHTML = "";
+
+    for (const priority of priorities) {
+        const priorityList = generatePriorityList(priority);
+        prioritiesContainerParent.innerHTML += priorityList;
+    }
+
+    const colorsList = generateColorsList();
+    prioritiesContainerParent.innerHTML += colorsList;
+}
+
+generatePrioritiesList();
 generateProductHorizontalList(20, 50);
